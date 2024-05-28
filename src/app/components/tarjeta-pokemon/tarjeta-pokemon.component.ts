@@ -24,7 +24,8 @@ export class TarjetaPokemonComponent implements OnChanges{
 
   extraerInformacion(){
     if(this.data && this.data.url !== ""){
-      this.id = this.data.url.substring(34, this.data.url.length-1)
+      this.id = this.data.url.substring(34, this.data.url.length-1);
+      return
       
     }
     if (this.fullData){

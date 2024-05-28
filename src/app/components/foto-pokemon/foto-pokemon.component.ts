@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Pokemon } from '../interfaces/pokemon';
 import { PokemonService } from 'src/app/services/pokemon.service';
 
@@ -9,21 +9,14 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 })
 export class FotoPokemonComponent {
 
- 
   
-  @Input()
-  _pokemon?: Pokemon | undefined;
-  public get pokemon(): Pokemon | undefined {
-    return this._pokemon;
+  @Input() pokemon?: Pokemon;
+ 
   }
-  public set pokemon(value: Pokemon | undefined) {
-    this._pokemon = value;
-  }
-
 
  
  
-}
+
   
 
 

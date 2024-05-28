@@ -9,7 +9,6 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 })
 export class DetalleComponent implements OnChanges {
   @Input() pokemon?: Pokemon;
-  @Output() pokemonChange = new EventEmitter<Pokemon>();
   @Input() abierto:boolean = false;
   @Output() clicked = new EventEmitter();
   descripcion: string = "";
@@ -21,7 +20,6 @@ export class DetalleComponent implements OnChanges {
     if (this.pokemon) {
       this.PokemonService.getDescripcion(this.pokemon?.id).then(res => {
       this.descripcion = res
-      console.log(res)
       });
     }
   }

@@ -13,8 +13,8 @@ import { TarjetaPokemonComponent } from './components/tarjeta-pokemon/tarjeta-po
     AppComponent,
     HomeComponent,
     FotoPokemonComponent,
+    TarjetaPokemonComponent,
     DetalleComponent,
-    TarjetaPokemonComponent
   ],
   imports: [
     BrowserModule,

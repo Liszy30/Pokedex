@@ -5,17 +5,15 @@
     aspect-ratio: 1;
     border-radius: 25px;
     background: repeating-linear-gradient(
-        to bottom,
-        #f5f7f9,
-        #f5f7f9 15px,
-        #c9e2fa 15px,
-        #c9e2fa 25px,
-
+      to bottom,
+      #f5f7f9,
+      #f5f7f9 15px,
+      #c9e2f4 15px,
+      #c9e2f4 25px,
     );
-
     img{
-        width: 100%;
-        image-rendering: pixelated;
-
+      width: 100%;
+      image-rendering: pixelated;
     }
-}
+  }
+  
